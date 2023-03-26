@@ -3,24 +3,24 @@ package com.github.bitfexl.mastermind;
 public class ConstraintRow {
     public final GuessRow guessRow;
 
-    private final GuessRow.Hints constraints;
+    private final Hints constraints;
 
-    public ConstraintRow(GuessRow guessRow, GuessRow.Hints constraints) {
+    public ConstraintRow(GuessRow guessRow, Hints constraints) {
         this.guessRow = guessRow;
         this.constraints = constraints;
     }
 
     public ConstraintRow(GuessRow guessRow, int correctColorAndPosition, int correctColor) {
         this.guessRow = guessRow;
-        this.constraints = new GuessRow.Hints(correctColorAndPosition, correctColor);
+        this.constraints = new Hints(correctColorAndPosition, correctColor);
     }
 
     public boolean check(GuessRow guessRow) {
-        GuessRow.Hints guessHints = this.guessRow.guess(guessRow);
+        Hints guessHints = this.guessRow.guess(guessRow);
         return guessHints.equals(constraints);
     }
 
-    public GuessRow.Hints getConstraints() {
+    public Hints getConstraints() {
         return constraints;
     }
 }

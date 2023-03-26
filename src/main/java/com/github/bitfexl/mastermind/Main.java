@@ -1,5 +1,9 @@
 package com.github.bitfexl.mastermind;
 
+import com.github.bitfexl.mastermind.generator.ConstraintRowGenerator;
+import com.github.bitfexl.mastermind.generator.GuessGenerator;
+import com.github.bitfexl.mastermind.generator.RowGenerator;
+
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Scanner;

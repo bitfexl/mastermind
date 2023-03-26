@@ -1,4 +1,7 @@
-package com.github.bitfexl.mastermind;
+package com.github.bitfexl.mastermind.generator;
+
+import com.github.bitfexl.mastermind.ConstraintRow;
+import com.github.bitfexl.mastermind.GuessRow;
 
 import java.util.Iterator;
 

@@ -1,4 +1,6 @@
-package com.github.bitfexl.mastermind;
+package com.github.bitfexl.mastermind.generator;
+
+import com.github.bitfexl.mastermind.GuessRow;
 
 /**
  * A generator for guesses.
